@@ -1,0 +1,233 @@
+[
+  {
+    "summary": {
+      "chunk_size": 300,
+      "chunk_overlap": 30,
+      "num_chunks": 21,
+      "embedding_shape": [
+        21,
+        384
+      ],
+      "average_precision_at_1": 0.6,
+      "average_precision_at_3": 0.533,
+      "average_recall_at_3": 1.0,
+      "average_retrieval_ms": 9.72
+    },
+    "query_results": [
+      {
+        "query": "What is RAG and how does it work?",
+        "retrieved_sources": [
+          "rag_basics.txt",
+          "rag_basics.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 10.02
+      },
+      {
+        "query": "Why is chunking important in a RAG pipeline?",
+        "retrieved_sources": [
+          "rag_basics.txt",
+          "rag_basics.txt",
+          "chunking.txt"
+        ],
+        "precision_at_1": 0.0,
+        "precision_at_3": 0.333,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 11.76
+      },
+      {
+        "query": "How do embeddings help retrieval?",
+        "retrieved_sources": [
+          "rag_basics.txt",
+          "vector_databases.txt",
+          "embeddings.txt"
+        ],
+        "precision_at_1": 0.0,
+        "precision_at_3": 0.333,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 8.01
+      },
+      {
+        "query": "What is the role of a vector database?",
+        "retrieved_sources": [
+          "vector_databases.txt",
+          "vector_databases.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.667,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 10.77
+      },
+      {
+        "query": "What does grounding mean in RAG?",
+        "retrieved_sources": [
+          "grounding_evaluation.txt",
+          "rag_basics.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.333,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 8.02
+      }
+    ]
+  },
+  {
+    "summary": {
+      "chunk_size": 500,
+      "chunk_overlap": 50,
+      "num_chunks": 14,
+      "embedding_shape": [
+        14,
+        384
+      ],
+      "average_precision_at_1": 0.6,
+      "average_precision_at_3": 0.6,
+      "average_recall_at_3": 1.0,
+      "average_retrieval_ms": 9.07
+    },
+    "query_results": [
+      {
+        "query": "What is RAG and how does it work?",
+        "retrieved_sources": [
+          "rag_basics.txt",
+          "rag_basics.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 9.77
+      },
+      {
+        "query": "Why is chunking important in a RAG pipeline?",
+        "retrieved_sources": [
+          "rag_basics.txt",
+          "chunking.txt",
+          "chunking.txt"
+        ],
+        "precision_at_1": 0.0,
+        "precision_at_3": 0.667,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 10.03
+      },
+      {
+        "query": "How do embeddings help retrieval?",
+        "retrieved_sources": [
+          "rag_basics.txt",
+          "vector_databases.txt",
+          "embeddings.txt"
+        ],
+        "precision_at_1": 0.0,
+        "precision_at_3": 0.333,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 7.76
+      },
+      {
+        "query": "What is the role of a vector database?",
+        "retrieved_sources": [
+          "vector_databases.txt",
+          "vector_databases.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.667,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 10.03
+      },
+      {
+        "query": "What does grounding mean in RAG?",
+        "retrieved_sources": [
+          "grounding_evaluation.txt",
+          "rag_basics.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.333,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 7.77
+      }
+    ]
+  },
+  {
+    "summary": {
+      "chunk_size": 800,
+      "chunk_overlap": 80,
+      "num_chunks": 10,
+      "embedding_shape": [
+        10,
+        384
+      ],
+      "average_precision_at_1": 0.8,
+      "average_precision_at_3": 0.467,
+      "average_recall_at_3": 1.0,
+      "average_retrieval_ms": 7.11
+    },
+    "query_results": [
+      {
+        "query": "What is RAG and how does it work?",
+        "retrieved_sources": [
+          "rag_basics.txt",
+          "rag_basics.txt",
+          "embeddings.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.667,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 0.0
+      },
+      {
+        "query": "Why is chunking important in a RAG pipeline?",
+        "retrieved_sources": [
+          "rag_basics.txt",
+          "chunking.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 0.0,
+        "precision_at_3": 0.333,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 17.69
+      },
+      {
+        "query": "How do embeddings help retrieval?",
+        "retrieved_sources": [
+          "embeddings.txt",
+          "embeddings.txt",
+          "vector_databases.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.667,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 6.04
+      },
+      {
+        "query": "What is the role of a vector database?",
+        "retrieved_sources": [
+          "vector_databases.txt",
+          "embeddings.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.333,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 6.04
+      },
+      {
+        "query": "What does grounding mean in RAG?",
+        "retrieved_sources": [
+          "grounding_evaluation.txt",
+          "rag_basics.txt",
+          "rag_basics.txt"
+        ],
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.333,
+        "recall_at_3": 1.0,
+        "retrieval_ms": 5.77
+      }
+    ]
+  }
+]

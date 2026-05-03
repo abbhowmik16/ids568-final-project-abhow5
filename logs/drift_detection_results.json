@@ -1,0 +1,38 @@
+{
+  "summary": {
+    "features_analyzed": 3,
+    "significant_drift_features": [
+      "query_length_tokens",
+      "retrieval_distance",
+      "response_length_chars"
+    ],
+    "moderate_drift_features": [],
+    "recommendation": "Investigate retrieval quality and refresh knowledge base if retrieval distance remains elevated."
+  },
+  "results": [
+    {
+      "feature": "query_length_tokens",
+      "reference_mean": 8.014,
+      "current_mean": 13.1,
+      "psi": 2.748,
+      "severity": "significant",
+      "visualization": "visualizations\\drift_query_length_tokens.png"
+    },
+    {
+      "feature": "retrieval_distance",
+      "reference_mean": 0.754,
+      "current_mean": 1.048,
+      "psi": 1.669,
+      "severity": "significant",
+      "visualization": "visualizations\\drift_retrieval_distance.png"
+    },
+    {
+      "feature": "response_length_chars",
+      "reference_mean": 184.882,
+      "current_mean": 261.623,
+      "psi": 0.76,
+      "severity": "significant",
+      "visualization": "visualizations\\drift_response_length_chars.png"
+    }
+  ]
+}

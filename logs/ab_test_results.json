@@ -1,0 +1,38 @@
+{
+  "experiment_name": "rag_topk_ab_test",
+  "control": "top-k = 3",
+  "treatment": "top-k = 5",
+  "required_sample_size_per_variant": 3690,
+  "actual_control_n": 4984,
+  "actual_treatment_n": 5016,
+  "primary_metric": "task_completion_rate",
+  "primary_metric_results": {
+    "control_rate": 0.7259229534510433,
+    "treatment_rate": 0.7673444976076556,
+    "absolute_lift": 0.041421544156612256,
+    "relative_lift": 0.05706052406759411,
+    "z_stat": 4.7621535557570605,
+    "p_value": 1.9153784263092888e-06,
+    "ci_95": [
+      0.024389719604642396,
+      0.058453368708582115
+    ],
+    "significant": "True"
+  },
+  "guardrails": {
+    "latency": {
+      "control_p99_seconds": 2.4775754301670507,
+      "treatment_p99_seconds": 2.9967633968873515,
+      "threshold_seconds": 3.0,
+      "passed": true
+    },
+    "error_rate": {
+      "control_error_rate": 0.008025682182985553,
+      "treatment_error_rate": 0.009768740031897927,
+      "threshold": 0.013000000000000001,
+      "passed": true
+    }
+  },
+  "guardrails_passed": true,
+  "recommendation": "SHIP_TREATMENT"
+}

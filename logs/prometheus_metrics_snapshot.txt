@@ -1,0 +1,103 @@
+# HELP python_gc_objects_collected_total Objects collected during gc
+# TYPE python_gc_objects_collected_total counter
+python_gc_objects_collected_total{generation="0"} 9204.0
+python_gc_objects_collected_total{generation="1"} 1044.0
+python_gc_objects_collected_total{generation="2"} 93.0
+# HELP python_gc_objects_uncollectable_total Uncollectable objects found during GC
+# TYPE python_gc_objects_uncollectable_total counter
+python_gc_objects_uncollectable_total{generation="0"} 0.0
+python_gc_objects_uncollectable_total{generation="1"} 0.0
+python_gc_objects_uncollectable_total{generation="2"} 0.0
+# HELP python_gc_collections_total Number of times this generation was collected
+# TYPE python_gc_collections_total counter
+python_gc_collections_total{generation="0"} 887.0
+python_gc_collections_total{generation="1"} 80.0
+python_gc_collections_total{generation="2"} 6.0
+# HELP python_info Python platform information
+# TYPE python_info gauge
+python_info{implementation="CPython",major="3",minor="11",patchlevel="0",version="3.11.0"} 1.0
+# HELP rag_requests_total Total RAG requests
+# TYPE rag_requests_total counter
+rag_requests_total{status="success"} 49.0
+# HELP rag_requests_created Total RAG requests
+# TYPE rag_requests_created gauge
+rag_requests_created{status="success"} 1.777767157366449e+09
+# HELP rag_request_latency_seconds End-to-end RAG request latency
+# TYPE rag_request_latency_seconds histogram
+rag_request_latency_seconds_bucket{le="0.01"} 16.0
+rag_request_latency_seconds_bucket{le="0.05"} 49.0
+rag_request_latency_seconds_bucket{le="0.1"} 49.0
+rag_request_latency_seconds_bucket{le="0.5"} 49.0
+rag_request_latency_seconds_bucket{le="1.0"} 49.0
+rag_request_latency_seconds_bucket{le="2.0"} 49.0
+rag_request_latency_seconds_bucket{le="5.0"} 49.0
+rag_request_latency_seconds_bucket{le="10.0"} 49.0
+rag_request_latency_seconds_bucket{le="30.0"} 49.0
+rag_request_latency_seconds_bucket{le="60.0"} 49.0
+rag_request_latency_seconds_bucket{le="120.0"} 49.0
+rag_request_latency_seconds_bucket{le="+Inf"} 49.0
+rag_request_latency_seconds_count 49.0
+rag_request_latency_seconds_sum 0.5562019348144531
+# HELP rag_request_latency_seconds_created End-to-end RAG request latency
+# TYPE rag_request_latency_seconds_created gauge
+rag_request_latency_seconds_created 1.7777671549596317e+09
+# HELP rag_retrieval_latency_seconds Retriever latency
+# TYPE rag_retrieval_latency_seconds histogram
+rag_retrieval_latency_seconds_bucket{le="0.001"} 0.0
+rag_retrieval_latency_seconds_bucket{le="0.005"} 0.0
+rag_retrieval_latency_seconds_bucket{le="0.01"} 16.0
+rag_retrieval_latency_seconds_bucket{le="0.05"} 49.0
+rag_retrieval_latency_seconds_bucket{le="0.1"} 49.0
+rag_retrieval_latency_seconds_bucket{le="0.5"} 49.0
+rag_retrieval_latency_seconds_bucket{le="1.0"} 49.0
+rag_retrieval_latency_seconds_bucket{le="+Inf"} 49.0
+rag_retrieval_latency_seconds_count 49.0
+rag_retrieval_latency_seconds_sum 0.5541942119598389
+# HELP rag_retrieval_latency_seconds_created Retriever latency
+# TYPE rag_retrieval_latency_seconds_created gauge
+rag_retrieval_latency_seconds_created 1.7777671549596317e+09
+# HELP rag_retrieval_result_count Number of chunks returned
+# TYPE rag_retrieval_result_count histogram
+rag_retrieval_result_count_bucket{le="0.0"} 0.0
+rag_retrieval_result_count_bucket{le="1.0"} 0.0
+rag_retrieval_result_count_bucket{le="2.0"} 0.0
+rag_retrieval_result_count_bucket{le="3.0"} 49.0
+rag_retrieval_result_count_bucket{le="5.0"} 49.0
+rag_retrieval_result_count_bucket{le="10.0"} 49.0
+rag_retrieval_result_count_bucket{le="+Inf"} 49.0
+rag_retrieval_result_count_count 49.0
+rag_retrieval_result_count_sum 147.0
+# HELP rag_retrieval_result_count_created Number of chunks returned
+# TYPE rag_retrieval_result_count_created gauge
+rag_retrieval_result_count_created 1.7777671549596317e+09
+# HELP rag_average_retrieval_distance Average FAISS distance for retrieved chunks
+# TYPE rag_average_retrieval_distance gauge
+rag_average_retrieval_distance 0.7981052001317342
+# HELP rag_response_length_chars Generated or simulated response length in characters
+# TYPE rag_response_length_chars histogram
+rag_response_length_chars_bucket{le="50.0"} 0.0
+rag_response_length_chars_bucket{le="100.0"} 49.0
+rag_response_length_chars_bucket{le="250.0"} 49.0
+rag_response_length_chars_bucket{le="500.0"} 49.0
+rag_response_length_chars_bucket{le="1000.0"} 49.0
+rag_response_length_chars_bucket{le="2000.0"} 49.0
+rag_response_length_chars_bucket{le="+Inf"} 49.0
+rag_response_length_chars_count 49.0
+rag_response_length_chars_sum 4018.0
+# HELP rag_response_length_chars_created Generated or simulated response length in characters
+# TYPE rag_response_length_chars_created gauge
+rag_response_length_chars_created 1.7777671549596317e+09
+# HELP rag_generation_latency_seconds Ollama generation latency
+# TYPE rag_generation_latency_seconds histogram
+rag_generation_latency_seconds_bucket{le="1.0"} 0.0
+rag_generation_latency_seconds_bucket{le="5.0"} 0.0
+rag_generation_latency_seconds_bucket{le="10.0"} 0.0
+rag_generation_latency_seconds_bucket{le="30.0"} 0.0
+rag_generation_latency_seconds_bucket{le="60.0"} 0.0
+rag_generation_latency_seconds_bucket{le="120.0"} 0.0
+rag_generation_latency_seconds_bucket{le="+Inf"} 0.0
+rag_generation_latency_seconds_count 0.0
+rag_generation_latency_seconds_sum 0.0
+# HELP rag_generation_latency_seconds_created Ollama generation latency
+# TYPE rag_generation_latency_seconds_created gauge
+rag_generation_latency_seconds_created 1.7777671549596317e+09

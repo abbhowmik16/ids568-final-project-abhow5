@@ -1,0 +1,42 @@
+{
+  "query": "What is RAG?",
+  "steps": [
+    {
+      "step_number": 1,
+      "type": "thought",
+      "content": {
+        "reasoning": "Analyzing query: What is RAG?"
+      }
+    },
+    {
+      "step_number": 2,
+      "type": "routing",
+      "content": {
+        "decision": "retrieval",
+        "reasoning": "Defaulted to retrieval for information-seeking query"
+      }
+    },
+    {
+      "step_number": 3,
+      "type": "action",
+      "content": {
+        "tool": "retrieval",
+        "success": true,
+        "sources": [
+          "rag_basics.txt",
+          "rag_basics.txt",
+          "rag_basics.txt"
+        ],
+        "duration_ms": 17.607927322387695
+      }
+    },
+    {
+      "step_number": 4,
+      "type": "answer",
+      "content": {
+        "final_answer": "Retrieved sources: ['rag_basics.txt', 'rag_basics.txt', 'rag_basics.txt']"
+      }
+    }
+  ],
+  "final_answer": "Retrieved sources: ['rag_basics.txt', 'rag_basics.txt', 'rag_basics.txt']"
+}

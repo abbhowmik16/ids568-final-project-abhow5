@@ -1,0 +1,4 @@
+Embeddings are dense numerical representations of text. They are designed so that texts with similar meanings have vectors that are close to one another in high-dimensional space. In a RAG pipeline, embeddings are used for both document chunks and user queries.
+A sentence-transformer model can be used to generate embeddings for chunks and queries. One common lightweight model is all-MiniLM-L6-v2, which is often used in educational or prototype RAG systems because it is efficient and easy to run locally.
+When a question is asked, the query is embedded using the same embedding model that was used for the documents. The system then compares the query vector to stored document vectors and retrieves the most similar chunks.
+Embedding quality matters because weak embeddings can hurt retrieval relevance. Even if the generator model is strong, poor embeddings can cause the wrong evidence to be retrieved.

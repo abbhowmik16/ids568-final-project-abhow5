@@ -1,0 +1,85 @@
+{
+  "summary": {
+    "average_precision_at_1": 0.6,
+    "average_precision_at_3": 0.6,
+    "average_recall_at_3": 1.0,
+    "num_queries": 5
+  },
+  "results": [
+    {
+      "query": "What is RAG and how does it work?",
+      "relevant_sources": [
+        "rag_basics.txt"
+      ],
+      "retrieved_sources": [
+        "rag_basics.txt",
+        "rag_basics.txt",
+        "rag_basics.txt"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 1.0,
+      "recall_at_3": 1.0,
+      "retrieval_ms": 9.27
+    },
+    {
+      "query": "Why is chunking important in a RAG pipeline?",
+      "relevant_sources": [
+        "chunking.txt"
+      ],
+      "retrieved_sources": [
+        "rag_basics.txt",
+        "chunking.txt",
+        "chunking.txt"
+      ],
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.667,
+      "recall_at_3": 1.0,
+      "retrieval_ms": 6.02
+    },
+    {
+      "query": "How do embeddings help retrieval?",
+      "relevant_sources": [
+        "embeddings.txt"
+      ],
+      "retrieved_sources": [
+        "rag_basics.txt",
+        "vector_databases.txt",
+        "embeddings.txt"
+      ],
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.333,
+      "recall_at_3": 1.0,
+      "retrieval_ms": 11.9
+    },
+    {
+      "query": "What is the role of a vector database?",
+      "relevant_sources": [
+        "vector_databases.txt"
+      ],
+      "retrieved_sources": [
+        "vector_databases.txt",
+        "vector_databases.txt",
+        "rag_basics.txt"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 0.667,
+      "recall_at_3": 1.0,
+      "retrieval_ms": 10.24
+    },
+    {
+      "query": "What does grounding mean in RAG?",
+      "relevant_sources": [
+        "grounding_evaluation.txt"
+      ],
+      "retrieved_sources": [
+        "grounding_evaluation.txt",
+        "rag_basics.txt",
+        "rag_basics.txt"
+      ],
+      "precision_at_1": 1.0,
+      "precision_at_3": 0.333,
+      "recall_at_3": 1.0,
+      "retrieval_ms": 8.96
+    }
+  ]
+}

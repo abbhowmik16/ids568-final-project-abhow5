@@ -1,0 +1,37 @@
+{
+  "query": "Summarize the previous information",
+  "steps": [
+    {
+      "step_number": 1,
+      "type": "thought",
+      "content": {
+        "reasoning": "Analyzing query: Summarize the previous information"
+      }
+    },
+    {
+      "step_number": 2,
+      "type": "routing",
+      "content": {
+        "decision": "summarize",
+        "reasoning": "Detected summarization keyword: 'summarize'"
+      }
+    },
+    {
+      "step_number": 3,
+      "type": "action",
+      "content": {
+        "tool": "summarize",
+        "success": true,
+        "duration_ms": 0.0
+      }
+    },
+    {
+      "step_number": 4,
+      "type": "answer",
+      "content": {
+        "final_answer": "Summary based on retrieved context: retrieval returns irrelevant chunks, the final answer may be incomplete or incorrect even if the language model itself is capable. alitatively by checking whether the response stays faithful to the retrieved context. It is important to separate retrieval failure from generation failure. Retrieval fa..."
+      }
+    }
+  ],
+  "final_answer": "Summary based on retrieved context: retrieval returns irrelevant chunks, the final answer may be incomplete or incorrect even if the language model itself is capable. alitatively by checking whether the response stays faithful to the retrieved context. It is important to separate retrieval failure from generation failure. Retrieval fa..."
+}

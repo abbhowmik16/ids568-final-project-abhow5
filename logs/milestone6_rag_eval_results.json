@@ -1,0 +1,172 @@
+[
+  {
+    "query": "What is RAG and how does it work?",
+    "retrieved_sources": [
+      "rag_basics.txt",
+      "rag_basics.txt",
+      "rag_basics.txt"
+    ],
+    "retrieved_chunk_ids": [
+      0,
+      2,
+      1
+    ],
+    "answer": "RAG (Retrieval-augmented generation) is a system design pattern that combi\u001b[5D\u001b[K\ncombines document retrieval with language generation to generate answers by\u001b[2D\u001b[K\nby using relevant information from an external document collection. The sys\u001b[3D\u001b[K\nsystem first collects, prepares, and splits documents into smaller chunks. \u001b[K\nThen, embeddings are created for each chunk and stored in a vector database\u001b[8D\u001b[K\ndatabase or similarity index. When a user asks a question, the system embed\u001b[5D\u001b[K\nembeds the query and retrieves the most relevant chunks. Finally, the retri\u001b[5D\u001b[K\nretrieved context is inserted into a prompt for a language model that gener\u001b[5D\u001b[K\ngenerates an answer grounded in the retrieved evidence. This process helps \u001b[K\nreduce hallucination and improve factual accuracy.",
+    "retrieval_ms": 24.1,
+    "generation_ms": 98647.09,
+    "total_ms": 98671.18
+  },
+  {
+    "query": "Why is chunking important in a RAG pipeline?",
+    "retrieved_sources": [
+      "rag_basics.txt",
+      "chunking.txt",
+      "chunking.txt"
+    ],
+    "retrieved_chunk_ids": [
+      2,
+      0,
+      1
+    ],
+    "answer": "Chunking is important in a RAG (Retrieve, Analyze, Generate) pipeline beca\u001b[4D\u001b[K\nbecause it allows for the splitting of long documents into smaller pieces b\u001b[1D\u001b[K\nbefore embedding and indexing them. This makes the process more manageable \u001b[K\nfor embedding models and language models, which work better with smaller pi\u001b[2D\u001b[K\npieces of text than entire long documents. The quality of a RAG system depe\u001b[4D\u001b[K\ndepends heavily on chunking quality. (Source: chunking.txt | Chunk: 0, Sour\u001b[4D\u001b[K\nSource: rag_basics.txt)",
+    "retrieval_ms": 104.55,
+    "generation_ms": 85341.27,
+    "total_ms": 85445.81
+  },
+  {
+    "query": "What is the role of a vector database?",
+    "retrieved_sources": [
+      "vector_databases.txt",
+      "vector_databases.txt",
+      "rag_basics.txt"
+    ],
+    "retrieved_chunk_ids": [
+      0,
+      1,
+      1
+    ],
+    "answer": "The role of a vector database, as mentioned in the provided context, is to\u001b[2D\u001b[K\nto store and retrieve text embeddings (converted from text chunks) that are\u001b[3D\u001b[K\nare semantically similar to a query, thus enabling efficient nearest-neighb\u001b[14D\u001b[K\nnearest-neighbor search for RAG systems.",
+    "retrieval_ms": 0.0,
+    "generation_ms": 72567.93,
+    "total_ms": 72567.93
+  },
+  {
+    "query": "How do embeddings help retrieval?",
+    "retrieved_sources": [
+      "rag_basics.txt",
+      "vector_databases.txt",
+      "embeddings.txt"
+    ],
+    "retrieved_chunk_ids": [
+      1,
+      1,
+      0
+    ],
+    "answer": "Embeddings help retrieval by allowing semantically similar texts to have v\u001b[1D\u001b[K\nvectors that are close to each other in high-dimensional space. When a user\u001b[4D\u001b[K\nuser submits a question, the system embeds the query and searches for nearb\u001b[5D\u001b[K\nnearby vectors in the vector database or similarity index. The top matching\u001b[8D\u001b[K\nmatching chunks are then returned as context for generating an answer.",
+    "retrieval_ms": 57.28,
+    "generation_ms": 74313.94,
+    "total_ms": 74371.22
+  },
+  {
+    "query": "What does grounding mean in RAG?",
+    "retrieved_sources": [
+      "grounding_evaluation.txt",
+      "rag_basics.txt",
+      "rag_basics.txt"
+    ],
+    "retrieved_chunk_ids": [
+      0,
+      0,
+      2
+    ],
+    "answer": "Grounding in RAG (Retrieval-augmented generation) means that a generated a\u001b[1D\u001b[K\nanswer is supported by the retrieved context. The answer should reflect the\u001b[3D\u001b[K\nthe content of the retrieved chunks rather than invent unsupported claims.",
+    "retrieval_ms": 84.96,
+    "generation_ms": 190314.94,
+    "total_ms": 190399.9
+  },
+  {
+    "query": "How should RAG evaluation be done?",
+    "retrieved_sources": [
+      "rag_basics.txt",
+      "grounding_evaluation.txt",
+      "rag_basics.txt"
+    ],
+    "retrieved_chunk_ids": [
+      2,
+      0,
+      0
+    ],
+    "answer": "Evaluation of a Retrieval-Augmented Generation (RAG) system usually includ\u001b[6D\u001b[K\nincludes both retrieval quality and answer quality. Retrieval quality can b\u001b[1D\u001b[K\nbe measured using metrics such as precision at k or recall at k, along with\u001b[4D\u001b[K\nwith manual relevance judgments. Answer quality can be reviewed qualitative\u001b[11D\u001b[K\nqualitatively by checking whether the response stays grounded in the provid\u001b[6D\u001b[K\nprovided context, reflecting the content of the retrieved chunks rather tha\u001b[3D\u001b[K\nthan inventing unsupported claims.",
+    "retrieval_ms": 31.66,
+    "generation_ms": 70108.62,
+    "total_ms": 70140.28
+  },
+  {
+    "query": "What happens if retrieval returns irrelevant chunks?",
+    "retrieved_sources": [
+      "vector_databases.txt",
+      "grounding_evaluation.txt",
+      "chunking.txt"
+    ],
+    "retrieved_chunk_ids": [
+      2,
+      1,
+      2
+    ],
+    "answer": "The final answer may be incomplete or incorrect. This is because retrieval\u001b[9D\u001b[K\nretrieval failure (when the system brings back the wrong chunks) can occur,\u001b[6D\u001b[K\noccur, which could lead to misleading, incomplete, or incorrect responses d\u001b[1D\u001b[K\ndespite the language model's capability.",
+    "retrieval_ms": 39.02,
+    "generation_ms": 48114.18,
+    "total_ms": 48153.2
+  },
+  {
+    "query": "What are the main steps in a RAG pipeline?",
+    "retrieved_sources": [
+      "rag_basics.txt",
+      "rag_basics.txt",
+      "embeddings.txt"
+    ],
+    "retrieved_chunk_ids": [
+      0,
+      2,
+      0
+    ],
+    "answer": "The main steps in a RAG (Retrieval-augmented generation) pipeline are:\n\n1. Documents are collected and prepared.\n2. The documents are split into smaller chunks.\n3. Embeddings are generated for both the document chunks and user queries.",
+    "retrieval_ms": 50.64,
+    "generation_ms": 1089185.73,
+    "total_ms": 1089236.37
+  },
+  {
+    "query": "Why is chunk overlap useful?",
+    "retrieved_sources": [
+      "chunking.txt",
+      "chunking.txt",
+      "chunking.txt"
+    ],
+    "retrieved_chunk_ids": [
+      0,
+      1,
+      2
+    ],
+    "answer": "Chunk overlap is useful because it helps preserve continuity between chunk\u001b[5D\u001b[K\nchunks by repeating a small amount of text from the end of one chunk at the\u001b[3D\u001b[K\nthe beginning of the next, which in turn reduces precision loss that might \u001b[K\noccur due to splitting long documents into smaller pieces.",
+    "retrieval_ms": 24.89,
+    "generation_ms": 57683.71,
+    "total_ms": 57708.59
+  },
+  {
+    "query": "What is the deadline for Milestone 6?",
+    "retrieved_sources": [
+      "grounding_evaluation.txt",
+      "grounding_evaluation.txt",
+      "rag_basics.txt"
+    ],
+    "retrieved_chunk_ids": [
+      2,
+      1,
+      0
+    ],
+    "answer": "I do not know based on the provided documents. The context does not mentio\u001b[6D\u001b[K\nmention any deadlines or timelines related to Milestone 6.",
+    "retrieval_ms": 51.02,
+    "generation_ms": 52770.58,
+    "total_ms": 52821.59
+  }
+]
